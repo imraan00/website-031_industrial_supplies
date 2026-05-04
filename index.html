@@ -33630,13 +33630,13 @@
 </footer>
 <script>
   // Initial load animation
-  window.addEventListener('load', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       const loader = document.getElementById('page-loader');
       loader.style.transition = 'opacity 0.4s ease';
       loader.style.opacity = '0';
       loader.style.pointerEvents = 'none';
-    }, 1800);
+    }, 800);
   });
 
   function showLoader(cb) {
